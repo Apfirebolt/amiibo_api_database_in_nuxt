@@ -18,13 +18,13 @@ export const useAmiibo = defineStore("amiibo", {
   },
 
   actions: {
-    async getItemsAction(searchText = "") {
+    async getItemsAction(searchText = "Mario") {
       try {
         this.loading = true;
-        const response = await httpClient.get(`?name=${searchText}`);
+        const response = await httpClient.get(`https://www.amiiboapi.com/api/amiibo/?name=${searchText}`);
         if (response) {
-          console.log('Response data:', response.data.amiibo);
-          this.itemList = response.data.amoiibo;
+          this.itemList = response.data.amiibo;
+          console.log('Item list:', this.itemList);
           this.loading = false;
         }
       } catch (error) {
