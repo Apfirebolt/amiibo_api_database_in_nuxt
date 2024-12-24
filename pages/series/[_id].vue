@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <div class="min-h-full bg-neutral-100 py-12 sm:px-6 lg:px-8">
+    <div class="min-h-full bg-neutral-100 py-6 sm:px-6 lg:px-8">
       <div class="sm:mx-auto">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-secondary">
           Series Detail

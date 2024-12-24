@@ -29,7 +29,17 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## Screenshots
 
-To be added later.
+First image shows the screenshot of the homepage where you can perform debounced search operation which gets results if they match from the API.
+
+![Screenshot 1](./screenshots/1.jpeg)
+
+Second image is the screenshot of all the goods available related to games.
+
+![Screenshot 2](./screenshots/2.png)
+
+This image shows the detail page of a given game related articles.
+
+![Screenshot 3](./screenshots/3.png)
 
 ## Installation
 
