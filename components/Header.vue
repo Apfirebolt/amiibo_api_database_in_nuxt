@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-orange-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-violet-800" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-roboto">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -73,7 +73,6 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
 import { useRouter } from "vue-router";
 import logo from '../assets/1.png';
 import {

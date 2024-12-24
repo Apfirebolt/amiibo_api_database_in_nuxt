@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <div class="min-h-full bg-neutral-100 py-12 sm:px-6 lg:px-8">
+    <div class="min-h-full bg-neutral-100 py-6 sm:px-6 lg:px-8">
       <div class="sm:mx-auto">
         <h2 class="mt-6 text-center text-3xl font-extrabold text-secondary">
           Characters
@@ -15,14 +15,14 @@
           <div
             v-for="character in characters"
             :key="character.name"
-            class="bg-white p-4 rounded-lg shadow"
+            class="bg-orange-400 p-4 rounded-lg shadow"
           >
             <h3 class="text-lg font-semibold text-gray-900">
               {{ character.name }}
             </h3>
             <button
               @click="goToDetail(character)"
-              class="mt-2 text-primary hover:underline"
+              class="mt-2 text-neutral-100 p-2 rounded-lg bg-orange-700 hover:bg-orange-900 transition duration-300 ease-in-out"
             >View Detail 
             </button>
           </div>
