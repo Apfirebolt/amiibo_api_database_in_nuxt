@@ -1,7 +1,7 @@
 <template>
   <Disclosure as="nav" class="bg-violet-800" v-slot="{ open }">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-roboto">
-      <div class="relative flex items-center justify-between h-16">
+    <div class="max-w-7xl flex justify-center px-2 sm:px-6 lg:px-8 font-roboto">
+      <div class="relative flex items-center h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
@@ -24,6 +24,7 @@
                 v-for="item in navigation"
                 :key="item.name"
                 :to="{ name: item.name }"
+                class="text-lg"
                 :class="[
                   item.current
                     ? 'bg-gray-900 text-white'
