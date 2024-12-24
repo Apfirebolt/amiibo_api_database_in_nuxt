@@ -10,13 +10,42 @@
         <li>Filter Amiibo by series, game, and more</li>
       </ul>
       <p>Explore the world of Amiibo and discover your favorite characters!</p>
+      {{ itemList }}
+      <div>
+        <input
+          type="text"
+          v-model="searchText"
+          placeholder="Search Amiibo by name"
+          class="border border-gray-300 rounded p-2 w-full my-5"
+        />
+      </div>
     </div>
   </NuxtLayout>
 </template>
 <script setup>
+import { computed, ref, watch } from "vue";
+import { useAmiibo } from "~/stores/amiibo"; // Assuming auto-imports
+
 definePageMeta({
   layout: false,
+  title: "Amiibo Database",
+  description: "Explore the world of Amiibo and discover your favorite characters!",
+  // image: "/images/amiibo.jpg",
+  // url: "https://amiibo-database.vercel.app/",
+  keywords: ["amiibo", "nintendo", "characters", "figures"],
+  robots: "index, follow",
 });
 
-//const
+const amiiboStore = useAmiibo();
+const searchText = ref("");
+
+const itemList = computed(() => amiiboStore.getItemList);
+const isLoading = computed(() => amiiboStore.isLoading);
+
+// debounce search input, wait for 500ms before searching
+watch(searchText, (value) => {
+  if (value.length > 2) {
+    amiiboStore.getItemsAction(value);
+  }
+}, { debounce: 1000 });
 </script>
