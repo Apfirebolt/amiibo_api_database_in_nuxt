@@ -89,7 +89,6 @@ import {
 import { LockClosedIcon, ViewfinderCircleIcon } from "@heroicons/vue/20/solid";
 
 const navigation = [
-  { name: "dashboard", path: "Dashboard", current: false },
   { name: "games", path: "Games", current: false },
   { name: "series", path: "Series", current: false },
   { name: "character", path: "Characters", current: false },

@@ -5,7 +5,7 @@
       >
         <div class="sm:mx-auto">
           <h2 class="mt-6 text-center text-3xl font-extrabold text-secondary">
-            Games
+            Characters
           </h2>
           <div v-if="loader" class="text-center mt-6">
               <Loader />
