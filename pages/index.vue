@@ -15,6 +15,7 @@
         <li class="mb-2">Filter Amiibo by series, game, and more</li>
       </ul>
       <p>Explore the world of Amiibo and discover your favorite characters!</p>
+      <ClientOnlyTest />
       <Loader v-if="isLoading" />
 
       <div>
@@ -57,6 +58,8 @@
   </NuxtLayout>
 </template>
 <script setup>
+import axios from "axios";
+import { useNuxtApp } from "#app";
 import { computed, onMounted, ref, watch } from "vue";
 import { useAmiibo } from "~/stores/amiibo"; // Assuming auto-imports
 
@@ -87,6 +90,25 @@ watch(
   },
   { debounce: 1000 }
 );
+
+// check if process meta is server
+if (import.meta.client) {
+  console.log("This function runs only on the client side.");
+}
+
+// if (import.meta.server) {
+//   console.log("This is server only.");
+//   // make a sample API call to jsonplaceholder
+
+//   axios
+//     .get("https://jsonplaceholder.typicode.com/posts")
+//     .then((response) => {
+//       console.log(response.data);
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// }
 
 onMounted(() => {
   amiiboStore.getItemsAction();

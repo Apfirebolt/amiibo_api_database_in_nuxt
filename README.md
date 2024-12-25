@@ -16,6 +16,8 @@ The project utilizes the [Amiibo API](https://www.amiiboapi.com/) to fetch data 
 
 This integration allows the application to display up-to-date information about Amiibo figures dynamically.
 
+This project is deployed https://amiibo-api-database-in-nuxt.vercel.app for the time being.
+
 Please Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more about Nuxt framework which is built on top of Vue JS.
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
