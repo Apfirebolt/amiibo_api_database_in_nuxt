@@ -24,7 +24,6 @@ export const useAmiibo = defineStore("amiibo", {
         const response = await httpClient.get(`https://www.amiiboapi.com/api/amiibo/?name=${searchText}`);
         if (response) {
           this.itemList = response.data.amiibo;
-          console.log('Item list:', this.itemList);
           this.loading = false;
         }
       } catch (error) {

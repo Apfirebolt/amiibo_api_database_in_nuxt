@@ -59,9 +59,7 @@
 </template>
 <script setup>
 import axios from "axios";
-import { useNuxtApp } from "#app";
 import { computed, onMounted, ref, watch } from "vue";
-import { useAmiibo } from "~/stores/amiibo"; // Assuming auto-imports
 
 definePageMeta({
   layout: false,

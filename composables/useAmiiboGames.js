@@ -33,7 +33,6 @@ export default function useAmiiboGames() {
       );
       game.value = response.data.amiibo;
       loading.value = false;
-      console.log('Game value ', game.value)
     } catch (err) {
       error.value =
         err.message || "An error occurred while fetching the game.";

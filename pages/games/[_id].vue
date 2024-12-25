@@ -64,7 +64,6 @@ definePageMeta({
 
 const route = useRoute();
 
-console.log("Game is ", game);
 // onMounted
 onMounted(async () => {
   const gameId = route.params._id;

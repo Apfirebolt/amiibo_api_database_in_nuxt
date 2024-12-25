@@ -14,12 +14,23 @@
     </NuxtLayout>
   </template>
   <script setup>
+  import { onMounted } from "vue";
+  const router = useRouter();
   
   // definePageMeta
   definePageMeta({
     layout: "dashboard",
+    middleware: 'auth',
     title: "about",
     description: "About page of the Amiibo Database App in Nuxt",
+  });
+
+  onMounted(() => {
+    console.log("This function runs only on the client side.");
+    // After 3 seconds, redirect to the home page
+    setTimeout(() => {
+      router.push("/");
+    }, 3000);
   });
 
   </script>
