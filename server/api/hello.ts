@@ -5,7 +5,6 @@ export default defineEventHandler(async (event) => {
     if (event.node.req.method === 'POST') {
         // Read the body of the request
         const body = await readBody(event)
-        console.log(body)
         // return data as it is in response
         const response = {
             body: body,

@@ -1,0 +1,5 @@
+{
+    "buildCommand": "nuxi build",
+    "installCommand": "npm install --force --legacy-peer-deps",
+    "framework": "nuxtjs"
+}
