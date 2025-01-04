@@ -25,11 +25,7 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.css"],
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@pinia/nuxt",
-    "pinia-plugin-persistedstate/nuxt",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "pinia-plugin-persistedstate/nuxt"],
 
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
