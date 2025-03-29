@@ -20,7 +20,7 @@
             <img
               :src="item.image"
               alt="Amiibo Image"
-              class="w-64 h-48 object-cover rounded-t-lg"
+              class="w-64 h-48 rounded-t-lg"
             />
             <div class="mt-4">
               <h3 class="text-lg font-semibold text-gray-800">

@@ -2,9 +2,18 @@
   <NuxtLayout name="default">
     <div class="min-h-full bg-neutral-100 py-12 sm:px-6 lg:px-8">
       <div class="sm:mx-auto">
-        <h2 class="mt-6 text-center text-3xl font-extrabold text-secondary">
-          Series
-        </h2>
+        <div class="hero-section bg-cover bg-center text-white py-16 px-6 rounded-lg"
+        style="background-image: url('https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_1500/ncom/en_US/amiibo/amiibo-lineup-img');">
+        <div class="bg-black/50 p-6 rounded-lg">
+          <h1 class="text-4xl font-bold mb-4">
+            Welcome to the Amiibo Database
+          </h1>
+          <p class="text-lg mb-6">
+            This application provides information about various Amiibo figures
+            related to Anime Series using the Amiibo API.
+          </p>
+        </div>
+      </div>
         <div v-if="loader" class="text-center mt-6">
           <Loader />
         </div>

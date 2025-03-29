@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': "#f0f0f0",
+        'secondary': "#1e1e1e",
+        'tertiary': "#2d2d2d",
+        'accent': "#ff4081",
+        "dark-accent": "#ff4081",
+        "dark-secondary": "#ffffff",
+        "dark-tertiary": "#ffffff",
+      },
       backgroundImage: {
         tea: "url('/hobbies/tea-cup.webp')",
         blog: "url('/hobbies/myblog.webp')",

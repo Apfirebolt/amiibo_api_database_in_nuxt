@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-violet-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-green-800 text-neutral-100" v-slot="{ open }">
     <div class="max-w-7xl flex justify-center px-2 sm:px-6 lg:px-8 font-roboto">
       <div class="relative flex items-center h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -97,10 +97,4 @@ const navigation = [
 ];
 
 const router = useRouter();
-
-const navigateToRoute = (routeName) => {
-  if (routeName) {
-    router.push({ name: routeName });
-  }
-};
 </script>

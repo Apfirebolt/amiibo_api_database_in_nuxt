@@ -23,9 +23,19 @@ export default defineNuxtConfig({
       ],
     },
   },
+  
+  auth: {
+    strategies: {
+      customStrategy: {
+        scheme: '~/schemes/customScheme',
+        /* ... */
+      }
+    }
+  },
+  
   css: ["~/assets/css/main.css"],
 
-  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "pinia-plugin-persistedstate/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "nuxt-swiper"],
 
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
