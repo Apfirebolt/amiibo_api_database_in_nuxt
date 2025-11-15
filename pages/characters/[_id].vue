@@ -12,7 +12,7 @@
           v-else
           class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
-          <div class="bg-white shadow-md rounded-lg p-4">
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="zoom-in-left">
             <div
               v-for="item in character"
               :key="item.head"
@@ -21,7 +21,7 @@
               <img
                 :src="item.image"
                 alt=""
-                class="w-64 h-48 object-cover rounded-t-lg"
+                class="w-64 h-48 rounded-t-lg"
               />
               <h3 class="mt-4 text-lg font-bold text-secondary">
                 {{ item.name }}

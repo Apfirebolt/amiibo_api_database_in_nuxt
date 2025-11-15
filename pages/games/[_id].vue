@@ -10,7 +10,7 @@
         </div>
         <div
           v-else
-          class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" data-aos="zoom-in-right"
         >
           <div
             v-for="item in game"

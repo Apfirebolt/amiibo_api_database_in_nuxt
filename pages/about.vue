@@ -26,7 +26,6 @@
   });
 
   onMounted(() => {
-    console.log("This function runs only on the client side.");
     // After 3 seconds, redirect to the home page
     setTimeout(() => {
       router.push("/");
