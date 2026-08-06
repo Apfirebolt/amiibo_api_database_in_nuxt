@@ -12,7 +12,7 @@ export default function useAmiiboSeries() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        "https://www.amiiboapi.com/api/amiiboseries/"
+        "https://amiiboapi.org/api/amiiboseries/"
       );
       seriesList.value = response.data.amiibo;
     } catch (err) {
@@ -28,7 +28,7 @@ export default function useAmiiboSeries() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        `https://www.amiiboapi.com/api/amiibo/?amiiboSeries=${id}`
+        `https://amiiboapi.org/api/amiibo/?amiiboSeries=${id}`
       );
       series.value = response.data.amiibo;
     } catch (err) {

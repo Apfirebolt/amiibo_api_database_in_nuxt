@@ -41,7 +41,7 @@
 </template>
 <script setup>
 import { onMounted } from "vue";
-import useAmiiboSeries from "../composables/useAmiiboSeries";
+import useAmiiboSeries from "@/composables/useAmiiboSeries";
 const { seriesList, fetchSeriesList, loader } = useAmiiboSeries();
 
 // definePageMeta

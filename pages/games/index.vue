@@ -46,7 +46,7 @@
 </template>
 <script setup>
 import { onMounted } from "vue";
-import useAmiiboGames from "../composables/useAmiiboGames";
+import useAmiiboGames from "@/composables/useAmiiboGames";
 const { games, fetchGames, loading } = useAmiiboGames();
 
 // definePageMeta

@@ -12,7 +12,7 @@ export default function useAmiiboGames() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        "https://www.amiiboapi.com/api/gameseries/"
+        "https://amiiboapi.org/api/gameseries/"
       );
       games.value = response.data.amiibo;
       loading.value = false;
@@ -29,7 +29,7 @@ export default function useAmiiboGames() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        `https://www.amiiboapi.com/api/amiibo/?gameseries=${id}`
+        `https://amiiboapi.org/api/amiibo/?gameseries=${id}`
       );
       game.value = response.data.amiibo;
       loading.value = false;

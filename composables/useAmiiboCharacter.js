@@ -12,7 +12,7 @@ export default function useAmiiboCharacter() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        "https://www.amiiboapi.com/api/character/"
+        "https://amiiboapi.org/api/character/"
       );
       characters.value = response.data.amiibo;
     } catch (err) {
@@ -28,7 +28,7 @@ export default function useAmiiboCharacter() {
     error.value = null;
     try {
       const response = await httpClient.get(
-        `https://www.amiiboapi.com/api/amiibo/?character=${id}`
+        `https://amiiboapi.org/api/amiibo/?character=${id}`
       );
       character.value = response.data.amiibo;
     } catch (err) {

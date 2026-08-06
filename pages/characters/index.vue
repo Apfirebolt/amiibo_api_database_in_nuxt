@@ -48,7 +48,7 @@
 
 <script setup>
 import { onMounted, computed } from "vue";
-import useAmiiboCharacters from "../composables/useAmiiboCharacter";
+import useAmiiboCharacters from "@/composables/useAmiiboCharacter";
 const { characters, fetchCharacters, loading } = useAmiiboCharacters();
 
 // definePageMeta
